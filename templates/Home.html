@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0E0E0E;
+    }
 
+    .topnav {
+      overflow: hidden;
+      background-color: #640000;
+      width: 100%;
+      height: 80px;
+      position: relative; /* Set position relative for absolute positioning */
+    }
+
+    .search-bar {
+      position: absolute;
+      top: 55%; /* Adjust top position to center vertically if needed */
+      right: 28px; /* Adjust right position to move it towards the right */
+      transform: translateY(-50%); /* Center vertically */
+    }
+
+    .topnav a {
+      color: #f2f2f2;
+      text-align: center;
+      padding: 25px 30px;
+      text-decoration: none;
+      font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      display: inline-block; /* Make navigation items take the full width */
+    }
+
+    .topnav a:hover {
+      background-color: #922b2b;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    .content {
+      padding-left: 20px;
+      color: #f2f2f2;
+    }
+ 
+  </style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="HomePage">Home</a>
+  <a href="Settings">Settings</a>
+
+  <!-- Add the search bar SVG element here -->
+  <svg class="search-bar" xmlns="http://www.w3.org/2000/svg" width="572" height="50" viewBox="0 0 572 50" fill="none">
+    <g filter="url(#filter0_d_1_8)">
+      <path d="M4 12C4 5.37258 9.37258 0 16 0H555.235C561.863 0 567.235 5.37258 567.235 12V38C567.235 44.6274 561.863 50 555.235 50H16C9.37259 50 4 44.6274 4 38V12Z" fill="#D9D9D9"/>
+    </g>
+    <defs>
+      <filter id="filter0_d_1_8" x="0" y="0" width="571.235" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_8"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_8" result="shape"/>
+      </filter>
+    </defs>
+  </svg>
+</div>
+
+</body>
+</html>

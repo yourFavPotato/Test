@@ -1,0 +1,43 @@
+<!-- color_change.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change Page</title>
+    <style>
+        /* Adding some basic styling for demonstration purposes */
+        body {
+            padding: 20px;
+        }
+        .custom-button {
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This is a styled button with the text "Change Color" -->
+    <button id="myButton" class="custom-button" onclick="changeColor()">Change Color</button>
+
+    <!-- Adding a script for changing the background color -->
+    <script>
+        function changeColor() {
+            // Get a random color in hexadecimal format
+            var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+            // Apply the random color to the body's background
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+</body>
+</html>
